@@ -1,0 +1,29 @@
+.mupka-contacts {
+}
+.mupka-contacts ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.mupka-contacts ul li {
+  flex: 1;
+  display: inline-block;
+  min-width: 26em;
+  padding-left: 2.25rem;
+  /*border: 1px solid #f0f;*/
+  border-right: 6px solid var(--color-secondary);
+}
+.mupka-contacts span {
+  display: inline-block;
+  margin-right: 1.0rem;
+  color: var(--color-neutral);
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.mupka-contacts .label {
+  font-size: 1.5rem;
+}
+.mupka-contacts .value {
+  font-size: 2rem;
+}

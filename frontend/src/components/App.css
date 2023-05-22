@@ -1,0 +1,23 @@
+#container {
+  /*background-color: darksalmon;*/
+  /*border: 5px solid #f0f;*/
+}
+
+#main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 8fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+#header {
+  background-color: var(--color-primary);
+}
+#central {
+  background-color: var(--color-primary);
+}
+#footer {
+  background-color: var(--color-primary);
+  /*border-top: 5px solid var(--color-secondary);*/
+  border-bottom: 13px solid var(--color-secondary);
+}

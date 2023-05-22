@@ -1,0 +1,123 @@
+# Mupkavision
+=============================================================================
+  - A live display for essential information for the elderly
+  - Fundamental:
+    - Greeting
+    - Date
+    - Time
+  - Also:
+    - Times in other timezones
+    - Media gallery
+    - Reminders
+    - Contacts
+  - Important:
+    - Ship basic version as soon as possible to see if it has any utility
+      - Can be updated remotely to fix issues/develop new features
+      - Hardware failure will need Gushka/Vino intervention
+
+## Technical
+  - Raspberry Pi based
+  - HDMI to TV
+  - Tailscale for connectivity
+    - If accessible, can be updated, restarted, etc
+    - Needs to be bootstrapped with New Pri WiFi
+ 
+## Frontend
+  - React?
+    - Solid?
+    - Svelte?
+  - [Storybook](https://storybook.js.org/)?
+    - "design system"?
+  - [Styled](https://styled-system.com/)?
+
+### Technical Issues
+  - If power is cycled (to TV and/or MV unit), will everything wake up as desired?
+    - MV can boot into X and Kioski mode
+    - WIll TV be on by default? Probably not.
+    - Will TV wake up with last input source selected?
+  - Does the picture need to be constantly changed to keep TV on?
+  - Could we "sleep" between the hours of 22:00 - 08:00?
+- Can we detect if the HDMI out is being "consumed" or not?
+    - Not currently visible from Tapo, so how do we know if it is on? 
+    - Perform automated actions according to HDMI detection?
+      - Switch on TV
+  - ERMM!!
+    - Is this a disastrous waste of electricity/money?
+      - TV on all the time as opposed to never
+
+## IDEAS
+  - Sheety for data/CMS
+    - Allows others to edit/etc
+  - Somehow sleep at night?
+    - But be able to switch back on, including TV
+  - IR blaster connected to unit, so:
+    - TV can be switched on (soft)
+    - HDMI source can be selected (?)
+  - Motion detector:
+    - Low res:
+      - Jiggle UI elements when motion detected (Tombi??)
+    - High res:
+      - Detect person/Mupka via computer vision
+      - Can Tapo be used here somehow?
+  - Media gallery rotates with fade effects/etc
+    - Can we also have video?
+    - No audio by default
+  - Icons to denote times of day:
+    - morning
+    - afternoon
+    - evening
+    - night
+  - Different "screens" for configured times of day?
+    - E.g. 10:00 - 11:00: "CARER, PLEASE GIVE PILLS"
+    - E.g. 17:00 - 18:00: "CARER, PLEASE WARM UP FOOD, AND TAKE OUT NEW FOOD FROM FREEZER"
+  - Messages:
+    - Edit data source to send message to Mupkavision
+      - "Chupping from Sydney!"
+    - Not clear: TTL
+  - Contacts:
+    - List of phone numbers: Gushka, Googush, Cioc, Konrad.
+  - Reminders:
+    - E.g. "Kingushka's birthday on the 12th!"
+      - Has start and end date for display
+        - In resolution of days, e.g. 10th - 13th
+    - Feed cat?
+      - Would require (flaming loud) audio alarm?
+  - Timezones:
+    - Display of current time in different timezones:
+      - London
+      - Warsaw
+      - Helsinki
+      - Sydney
+    - Should not confuse the current local time (a fundamental)
+
+## NOTES
+  - Cannot overwhelm the display with information
+  - Fundamental information must be constant, and readable
+    - Greeting
+    - Date
+    - Time
+  - Other information can be rotated?
+    - Media gallery:
+      - Fade out/in one or more assets?
+      - Assets on a slowly moving carousel?
+      - Assets periodically overtake the whole screen?
+        - NO: cannot remove fundamentals
+  - Concern about information density:
+    - Fundamentals (A given)
+    - Media
+    - Timezones
+    - Reminders
+    - Contacts
+    - Messages
+  - Information must be as constant as possible so that familiarity and trust can be developed
+    - Cannot have too much
+    - Cannot have information moving around
+    - Cannot have any fundamentals changing/moving/varying
+  - Variation?:
+    - Possibly have (gently) rotating/changing media to provide interest?
+    - Some colour variation?
+      - Different day of the week has different BG colour/theme?
+        - Linked to coloured doset box?!
+  - Bible stuff?
+  - Popup message from turtles?
+    - E.g. Popup every 5 mins during message lifetime window

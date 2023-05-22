@@ -1,0 +1,33 @@
+.mupka-temporal {
+  padding: 20px;
+  text-align: center;
+}
+.mupka-temporal-inner {
+  display: inline-block;
+}
+.mupka-temporal-component p {
+  font-family: sans-serif;
+}
+.mupka-temporal-component p span {
+  display: inline-block;
+}
+.mupka-temporal-component .label {
+  min-width: 6em;
+  text-align: right;
+  font-size: 2.5rem;
+  margin-right: 2rem;
+  margin-top: 1.5rem;
+  vertical-align: top;
+  color: var(--color-accentsecondary)
+}
+.mupka-temporal-component .value {
+  font-size: 6rem;
+  font-weight: bold;
+  color: var(--color-neutral)
+}
+.mupka-temporal .mupka-temporal-date p span.label {
+  font-size: 250% !important;
+}
+.mupka-temporal .mupka-temporal-date p span.value {
+  font-size: 400% !important;
+}

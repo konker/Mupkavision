@@ -1,0 +1,13 @@
+.mupka-temporal-greeting {
+  padding: 2rem 0 0 0;
+  background-color:  var(--color-primary);
+  color: var(--color-accentprimary);
+  border-top: 13px solid var(--color-secondary);
+  text-align: center;
+  height: 100%;
+}
+.mupka-temporal-greeting p {
+  font-size: 7rem;
+  font-family:  sans-serif;
+  font-weight: 700;
+}

@@ -1,0 +1,32 @@
+.mupka-temporal-timezones {
+  border-top: 5px solid var(--color-secondary);
+  background-color: var(--color-neutral);
+}
+.mupka-temporal-timezones ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.mupka-temporal-timezones ul li {
+  flex: 1;
+  display: inline-block;
+  min-width: 26em;
+  padding-left: 2.25rem;
+  /*border: 1px solid #f0f;*/
+  border-right: 6px solid var(--color-secondary);
+}
+
+.mupka-temporal-timezones span {
+  display: inline-block;
+  margin-right: 1.0rem;
+  color: var(--color-primary);
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.mupka-temporal-timezones .label {
+  font-size: 1.5rem;
+}
+.mupka-temporal-timezones .value {
+  font-size: 2rem;
+}
